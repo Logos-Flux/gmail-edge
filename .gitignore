@@ -1,0 +1,12 @@
+node_modules
+dist
+*.log
+.env
+.env.local
+.DS_Store
+coverage
+.turbo
+.bun
+bun.lockb
+package-lock.json
+RELEASE_CHECKLIST*.md

@@ -1,0 +1,66 @@
+{
+  "name": "@logos-flux/gmail-edge",
+  "version": "0.1.0",
+  "description": "Dependency-free Gmail API client for edge runtimes (Workers, Bun, Node, Deno).",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "lint": "biome check src test",
+    "format": "biome format --write src test",
+    "prepublishOnly": "bun run typecheck && bun run build"
+  },
+  "keywords": [
+    "gmail",
+    "google",
+    "email",
+    "api",
+    "oauth",
+    "cloudflare-workers",
+    "bun",
+    "deno",
+    "edge",
+    "fetch"
+  ],
+  "author": "Logos-Flux",
+  "license": "MIT",
+  "homepage": "https://github.com/Logos-Flux/gmail-edge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Logos-Flux/gmail-edge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Logos-Flux/gmail-edge/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.0",
+    "@types/bun": "^1.1.0",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0"
+  }
+}
