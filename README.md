@@ -4,6 +4,7 @@ Dependency-free Gmail API client for edge runtimes.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![npm](https://img.shields.io/npm/v/@logos-flux/gmail-edge.svg)](https://www.npmjs.com/package/@logos-flux/gmail-edge)
+[![CI](https://github.com/Logos-Flux/gmail-edge/actions/workflows/ci.yml/badge.svg)](https://github.com/Logos-Flux/gmail-edge/actions/workflows/ci.yml)
 
 > **Status:** maintained for our own edge-runtime Gmail integrations. Stable for the documented surface; PRs welcome, support not promised.
 
